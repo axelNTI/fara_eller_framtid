@@ -1,0 +1,27 @@
+b {
+
+}
+
+.header {
+    background-color: blueviolet;
+    width: 100vw;
+    height: 20vw;
+}
+
+.collection-hero-banner {
+    position: relative;
+    margin-top: 30px;
+    min-height: 350px;
+    z-index: 50;
+    background-size: 100%;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 110px 0;
+}
+
+.collection-hero-banner img {
+    float: left; 
+    padding-right: 5vw;
+}
