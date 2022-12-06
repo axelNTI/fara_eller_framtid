@@ -1,14 +1,67 @@
-b {
+* {
+  padding: 0;
+  margin: 0;
+}
 
+b {
 }
 
 .header {
-    background-color: blueviolet;
-    width: 100vw;
-    height: 20vw;
+  background-color: blueviolet;
+  width: 100vw;
+  height: 20vh;
 }
 
-.collection-hero-banner {
+.episode {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10vh auto;
+  width: 50vw;
+  background-color: rgb(200, 200, 200);
+  border-radius: 15px;
+}
+
+.episode_left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  float: left;
+  margin: 10px;
+}
+
+.episode_left img {
+  width: 150px;
+  border-radius: 15px;
+}
+
+.episode_left audio {
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+  width: 150px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.episode_right {
+  flex: 50%;
+  padding: 10px;
+  text-shadow: 0 0 15px black;
+}
+
+.episode_right h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.episode_right p {
+  margin-top: 10px;
+  color: white;
+}
+
+/* .collection-hero-banner {
     position: relative;
     margin-top: 30px;
     min-height: 350px;
@@ -24,4 +77,4 @@ b {
 .collection-hero-banner img {
     float: left; 
     padding-right: 5vw;
-}
+} */
