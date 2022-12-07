@@ -3,14 +3,35 @@
   margin: 0;
 }
 
-b {
+
+
+body {
+  background: linear-gradient(to right, black, rgb(6, 6, 182), black,rgb(6, 6, 182), black);;
 }
 
 .header {
   background-color: blueviolet;
   width: 100vw;
   height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+
 }
+.header img {
+  height: 15vh;  
+  padding: 2.5vh;
+  border-radius: 1vh;
+}
+h1 {
+  padding-top: 50px;
+  font-size: 40px;
+  color: rgb(252, 251, 250);
+}
+
+
+
 
 .episode {
   display: flex;
@@ -18,8 +39,9 @@ b {
   flex-direction: row;
   margin: 10vh auto;
   width: 50vw;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(50, 50, 50);
   border-radius: 15px;
+  z-index: 2;
 }
 
 .episode_left {
@@ -31,14 +53,14 @@ b {
 }
 
 .episode_left img {
-  width: 150px;
+  width: 300px;
   border-radius: 15px;
 }
 
 .episode_left audio {
   height: 50px;
   margin: 10px 10px 10px 0px;
-  width: 150px;
+  width: 300px;
   border-radius: 5px;
   font-weight: 700;
   font-size: 15px;
@@ -52,29 +74,14 @@ b {
 
 .episode_right h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color: white;
 }
 
 .episode_right p {
+  font-size: 25px;
   margin-top: 10px;
   color: white;
 }
 
-/* .collection-hero-banner {
-    position: relative;
-    margin-top: 30px;
-    min-height: 350px;
-    z-index: 50;
-    background-size: 100%;
-    background-position: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 110px 0;
-}
 
-.collection-hero-banner img {
-    float: left; 
-    padding-right: 5vw;
-} */
