@@ -11,20 +11,27 @@ body {
   background-color: blueviolet;
   width: 100vw;
   height: 20vh;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  text-align: center;
 }
 
 .header img {
   height: 15vh;
   padding: 2.5vh;
   border-radius: 1vh;
+  float: left;
+}
+
+.title {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 h1 {
   font-size: 40px;
   color: rgb(252, 251, 250);
+  float: left;
+  margin: auto 0;
 }
 
 .episode {
