@@ -1,37 +1,45 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(150, 150, 150);
 }
 
-.header {
+header {
   background-color: blueviolet;
   width: 100vw;
   height: 20vh;
-  text-align: center;
-}
-
-.header img {
-  height: 15vh;
-  padding: 2.5vh;
-  border-radius: 1vh;
-  float: left;
-}
-
-.title {
+  align-items: center;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
-}
-
-h1 {
-  font-size: 40px;
-  color: rgb(252, 251, 250);
-  float: left;
-  margin: auto 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 2vw;
+  & > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    & > img {
+      height: 20vh;
+      padding: 2.5vh;
+      border-radius: 1vh;
+    }
+    & > h1 {
+      font-size: 40px;
+      color: rgb(252, 251, 250);
+    }
+  }
+  & > a {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(252, 251, 250);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .episode {
